@@ -379,6 +379,30 @@ img {
         0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
+.portfolio-item:hover .portfolio-overlay {
+    transform: translateY(0);
+}
+.portfolio-thumb {
+    position: relative;
+    overflow: hidden;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.portfolio-overlay {
+    position: absolute;
+    display: flex;
+    transform: translateY(100%);
+    transition: transform var(--transition);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 40px 32px;
+    background-color: var(--iris);
+    color: var(--cloud);
+}
+
 /* footer */
 .footer {
     background-color: var(--navy-blue);
